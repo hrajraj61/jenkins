@@ -1,6 +1,10 @@
 #!/usr/bin/env groovy
 pipeline{
-  agent{}
+  agent{
+    node{
+      label 'test'
+    }
+  }
   stages{
     stage("Hii"){
       steps{
