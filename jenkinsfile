@@ -1,0 +1,7 @@
+pipeline{
+  Stage("Hii"){
+    Steps{
+      echo "Hii"
+    }
+  }
+}
