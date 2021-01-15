@@ -6,6 +6,7 @@ pipeline{
       steps{
         checkout scm
         echo "Hiis"
+        echo "Current workspace is ${env.WORKSPACE}"
       }
     }
   }
