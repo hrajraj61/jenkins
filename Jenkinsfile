@@ -5,7 +5,6 @@ pipeline{
     stage("Hii"){
       steps{
         checkout scm
-        echo scm.path
         echo "Hiis"
       }
     }
