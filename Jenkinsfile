@@ -1,8 +1,13 @@
 #!/usr/bin/env groovy
 pipeline{
-  agent any
+  agent none
   stages{
     stage("Hii"){
+      agent{
+        node{
+          label 'ngbuilda02'
+        }
+      }
       steps{
         checkout scm
         echo "Hiis"
