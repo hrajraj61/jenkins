@@ -9,7 +9,7 @@ pipeline{
         echo "Hiis"
         echo "Current workspace is ${env.WORKSPACE}"
          sshagent(credentials : ['hraj']) {
-                    sh 'ssh -oStrictHostKeyChecking=no fxdeva11 echo "test connect -v $(echo "${VERSION}")"'
+                    sh 'ssh -oStrictHostKeyChecking=no '' echo "test connect -v $(echo "${VERSION}")"'
          }
       }
     }
