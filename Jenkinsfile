@@ -7,6 +7,7 @@ pipeline{
       steps{
         checkout scm
         echo "Hiis"
+        sh 'whoami'
         echo "Current workspace is ${env.WORKSPACE}"
          sshagent(credentials : ['hraj']) {
                     sh 'ssh -oStrictHostKeyChecking=no '' echo "test connect -v $(echo "${VERSION}")"'
